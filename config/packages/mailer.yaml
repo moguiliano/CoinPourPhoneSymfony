@@ -1,3 +1,10 @@
 framework:
     mailer:
         dsn: '%env(MAILER_DSN)%'
+        envelope:
+            sender: 'mohamedguiliano@hotmail.fr'
+            recipients: ['mohamedguiliano@hotmail.fr', 'mohamedguiliano@yahoo.com']
+        headers:
+            From: 'mohamedguiliano <mohamedguiliano@hotmail.fr>'
+            Bcc: 'baz@example.com'
+            X-Custom-Header: 'foobar'
